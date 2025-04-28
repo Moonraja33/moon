@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Welcome to the Trading Dashboard</h1>
+
+        <div class="card">
+            <div class="card-header">
+                AI Signal Preview
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Current Trading Signal</h5>
+                <p id="signalAction">Loading...</p>
+                <p id="signalConfidence">Confidence: 0%</p>
+                <p id="signalTimestamp">Timestamp: </p>
+            </div>
+        </div>
+
+        <h3 class="mt-4">Performance Metrics</h3>
+        <ul>
+            <li>Win Rate: <span id="winRate">Loading...</span>%</li>
+            <li>Total Trades: <span id="totalTrades">Loading...</span></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('preview_update', function(data) {
+            // Update the signal information with the new data
+            $('#signalAction').text('Action: ' + data.signal.action);
+            $('#signalConfidence').text('Confidence: ' + data.signal.confidence);
+            $('#signalTimestamp').text('Timestamp: ' + data.signal.timestamp);
+
+            // Update performance metrics
+            $('#winRate').text(data.metrics.win_rate);
+            $('#totalTrades').text(data.metrics.total_trades);
+        });
+    </script>
+</body>
+</html>

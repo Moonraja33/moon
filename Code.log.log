@@ -1,0 +1,198 @@
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\voice_interface.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\voice_interface.py", line 2, in <module>
+    from gtts import gTTS
+ModuleNotFoundError: No module named 'gtts'
+
+[Done] exited with code=1 in 5.049 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\main.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\main.py", line 2, in <module>
+    from chart_plotter import LiveChart
+ModuleNotFoundError: No module named 'chart_plotter'
+
+[Done] exited with code=1 in 2.845 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\voice_interface.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\voice_interface.py", line 2, in <module>
+    from gtts import gTTS
+ModuleNotFoundError: No module named 'gtts'
+
+[Done] exited with code=1 in 0.53 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\basic_ai_agent.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\basic_ai_agent.py", line 2, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+[Done] exited with code=1 in 2.318 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\BasicAIAgent.py"
+  File "c:\Users\hp\Desktop\TradingAgent\BasicAIAgent.py", line 488
+    generate signal
+             ^^^^^^
+SyntaxError: invalid syntax
+
+[Done] exited with code=1 in 0.544 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\BasicAIAgent.py"
+  File "c:\Users\hp\Desktop\TradingAgent\BasicAIAgent.py", line 566
+    python -c "from tabulate import tabulate; print('\u2705 Tabulate installed successfully')"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+[Done] exited with code=1 in 1.77 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\BasicAIAgent.py"
+  File "c:\Users\hp\Desktop\TradingAgent\BasicAIAgent.py", line 811
+    python -c "from tabulate import tabulate; print('\u2705 Tabulate installed successfully')"
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+
+[Done] exited with code=1 in 0.297 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\deep_model.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\deep_model.py", line 10, in <module>
+    from tensorflow.keras.models import Sequential, save_model, load_model
+ModuleNotFoundError: No module named 'tensorflow'
+
+[Done] exited with code=1 in 17.095 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\from tensorflow.keras.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\from tensorflow.keras.py", line 1, in <module>
+    from tensorflow.keras.models import Sequential
+ModuleNotFoundError: No module named 'tensorflow'
+
+[Done] exited with code=1 in 0.238 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\trading_signals.py"
+
+[Done] exited with code=0 in 0.275 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\from tensorflow.keras.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\from tensorflow.keras.py", line 1, in <module>
+    from tensorflow.keras.models import Sequential
+ModuleNotFoundError: No module named 'tensorflow'
+
+[Done] exited with code=1 in 0.228 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\deep_model.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\deep_model.py", line 10, in <module>
+    from tensorflow.keras.models import Sequential, save_model, load_model
+ModuleNotFoundError: No module named 'tensorflow'
+
+[Done] exited with code=1 in 5.037 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\main.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\main.py", line 2, in <module>
+    from chart_plotter import LiveChart
+ModuleNotFoundError: No module named 'chart_plotter'
+
+[Done] exited with code=1 in 0.5 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\trading_signals.py"
+
+[Done] exited with code=0 in 0.246 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\data_loader.py"
+
+[Done] exited with code=0 in 5.669 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\deep_model.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\deep_model.py", line 10, in <module>
+    from tensorflow.keras.models import Sequential, save_model, load_model
+ModuleNotFoundError: No module named 'tensorflow'
+
+[Done] exited with code=1 in 5.2 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\deep_model.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\deep_model.py", line 10, in <module>
+    from tensorflow.keras.models import Sequential, save_model, load_model
+ModuleNotFoundError: No module named 'tensorflow'
+
+[Done] exited with code=1 in 7.162 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\test_imports.py"
+YF.download() has changed argument auto_adjust default to True
+
+[*********************100%***********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\test_imports.py", line 28, in <module>
+    test_imports()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\hp\Desktop\TradingAgent\test_imports.py", line 10, in test_imports
+    print("\u2705 yfinance working")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+[Done] exited with code=1 in 16.78 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\config.py"
+
+[Done] exited with code=0 in 0.302 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\agent.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\agent.py", line 6, in <module>
+    from utils.path_manager import PathManager
+ModuleNotFoundError: No module named 'utils.path_manager'; 'utils' is not a package
+
+[Done] exited with code=1 in 3.692 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\agent.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\agent.py", line 6, in <module>
+    from utils.path_manager import PathManager
+ModuleNotFoundError: No module named 'utils.path_manager'; 'utils' is not a package
+
+[Done] exited with code=1 in 3.509 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\tests\test_agent.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\tests\test_agent.py", line 2, in <module>
+    from agent import BasicAIAgent
+ModuleNotFoundError: No module named 'agent'
+
+[Done] exited with code=1 in 0.575 seconds
+
+[Running] node "c:\Users\hp\Desktop\TradingAgent\static\js\dashboard.js"
+
+[Done] exited with code=0 in 0.209 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\main.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\main.py", line 2, in <module>
+    from chart_plotter import LiveChart
+ModuleNotFoundError: No module named 'chart_plotter'
+
+[Done] exited with code=1 in 0.826 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\main.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\main.py", line 2, in <module>
+    from chart_plotter import LiveChart
+ModuleNotFoundError: No module named 'chart_plotter'
+
+[Done] exited with code=1 in 0.487 seconds
+
+[Running] python -u "c:\Users\hp\Desktop\TradingAgent\app.py"
+Traceback (most recent call last):
+  File "c:\Users\hp\Desktop\TradingAgent\app.py", line 3, in <module>
+    from chart_plotter import LiveChart
+ModuleNotFoundError: No module named 'chart_plotter'
+
+[Done] exited with code=1 in 0.995 seconds
+

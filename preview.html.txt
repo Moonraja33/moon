@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Preview</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Signal Preview</h1>
+
+        <div class="card">
+            <div class="card-header">
+                Real-Time Signal Update
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Current Signal Action</h5>
+                <p id="previewSignalAction">Waiting for signal...</p>
+                <p id="previewSignalConfidence">Confidence: 0%</p>
+                <p id="previewSignalTimestamp">Timestamp: </p>
+                <p id="previewSignalResult">Result: </p>
+            </div>
+        </div>
+
+        <h3 class="mt-4">Performance Metrics</h3>
+        <ul>
+            <li>Win Rate: {{ metrics.win_rate }}%</li>
+            <li>Total Trades: {{ metrics.total_trades }}</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('preview_update', function(data) {
+            // Update the preview with the new signal data
+            $('#previewSignalAction').text('Action: ' + data.signal.action);
+            $('#previewSignalConfidence').text('Confidence: ' + data.signal.confidence);
+            $('#previewSignalTimestamp').text('Timestamp: ' + data.signal.timestamp);
+            $('#previewSignalResult').text('Result: ' + data.signal.result);
+        });
+    </script>
+</body>
+</html>
